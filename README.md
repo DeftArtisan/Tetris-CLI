@@ -1,2 +1,3 @@
 # Tetris-CLI
-Tetris CLI
+
+Classic tetris written in C.
