@@ -1,3 +1,3 @@
-# Tetris-CLI
+# Tetromino
 
 Classic tetris written in C.
