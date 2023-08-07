@@ -3,9 +3,9 @@
 #define _CL_ 100
 #define _RW_ 12
 
-//#define _BUFF_REND(MVGR, MV, GR)      (memcpy(MVGR, GR, _CL_ * _RW_), _buffer_db(MV, GR), _hd_buff_crs(), buff_render(GR))
-#define _sective(_VARG_...) puts(#_VARG_) //converts variadic arguments to string literals
-#define _secv(_AV_, _VB_, _AC_) (_AV_, _VB, ##_AC_) //concatenates two successive preprocessor tokens into a resulting subsequent(i.e valid identifiers, operators(!,=, !=), etc.) 
+#define _BUFF_REND(MVGR, MV, GR)      (memcpy(MVGR, GR, _CL_ * _RW_), _buffer_db(MV, GR), _hd_buff_crs(), buff_render(GR))
+#define _sective(_VARG_...) puts(#_VARG_) 
+#define _secv(_AV_, _VB_, _AC_) (_AV_, _VB, ##_AC_) 
 
 extern void _init_grd(void* _grid);
 
